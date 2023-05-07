@@ -29,11 +29,30 @@
     <section id="sec_ayuda">
       <!-- Sección de texto de ayuda-->
       <h2>Ayuda Cine App v.1</h2>
+      <p>Esta app te permite consultar la cartelera de cine uilizando la API de <a
+          href="“https://www.themoviedb.org/documentation/api" target="_blank">The movie database API.</a>
+        <br>
+        <br>
+        Para poder registrar sus peliculas favoritas deberá <a href="index.html">Agregar Favorito</a> desde la cartelera
+        y luego visualizar nuestros favoritos desde <a href="favorities.html">Mis favoritas</a>
+      </p>
+      Si tiene alguna sugerencia o inconveniente por favor complete el siguiente formulario y envíenoslo. Lo
+      contactaremos a la brevedad.</p>
     </section>
     <section id="form-cine_contacto">
       <!-- Sección donde se debe colocar el formulario de contacto-->
       <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text">
 
+        <label for="email">Email:</label>
+        <input type="email">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea></textarea>
+
+        <button type="reset">Limpiar</button>
+        <button type="submit">Enviar</button>
       </form>
     </section>
     <section id="sec-cine-result"></section>
