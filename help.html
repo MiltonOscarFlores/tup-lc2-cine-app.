@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TUP LC2 - TP Integrador</title>
   <!-- Estilos CSS -->
+  <link rel="shortcut icon" href="img/cinema_popcorn.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/pages/help.css">
 </head>
 
 <body>
   <header>
     <h1>
       <!--Titulo Cabecera-->
+      <img src="img/IconoCine.png" alt="logo">
       <span>Cartelera de Cine</span>
     </h1>
     <nav>
@@ -50,19 +53,28 @@
 
         <label for="mensaje">Mensaje:</label>
         <textarea></textarea>
-
+        <div class="botones">
         <button type="reset">Limpiar</button>
         <button type="submit">Enviar</button>
+      </div>
       </form>
     </section>
-    <section id="sec-cine-result"></section>
+    <section id="sec-cine-result" class="sec-cine-result"></section>
     <!-- Sección donde se debe mostrar los mensajes de error -->
+    
+    <div class="div-error">
+      <span class="error" 
+        >La Película ingresada ya se encuentra almacenada
+      </span>
+    </div>
     </section>
     <p></p>
   </main>
   <footer>
     <p>Desarrollado con ♥ - LC2</p>
   </footer>
+  <script src="js/common.js" defer></script>
+  <script src="js/pages/help.js" defer></script>
 </body>
 
 </html>

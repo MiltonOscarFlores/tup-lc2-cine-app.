@@ -1,0 +1,13 @@
+.contenedorPeliculasFavoritas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;    
+}
+.contenedorPeliculasFavoritas img {
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  border-radius: 30px;
+}
