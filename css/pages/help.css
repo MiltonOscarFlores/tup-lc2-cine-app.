@@ -36,6 +36,14 @@ form button {
 .botones button {
   border-radius: 9px;
   border: none;
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background-color: #487765;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
 }
 
 .div-error {
