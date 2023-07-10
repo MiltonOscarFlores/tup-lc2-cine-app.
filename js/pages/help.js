@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (nombreValue !== "" && emailValue !== "" && mensajeValue !== "") {
-            // Aquí puedes realizar cualquier acción adicional que desees al enviar el formulario
             enviado.textContent = "Enviado Exitosamente"
             enviado.style.display = "block"
             form.reset();
