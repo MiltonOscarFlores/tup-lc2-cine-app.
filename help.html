@@ -46,13 +46,13 @@
       <!-- Sección donde se debe colocar el formulario de contacto-->
       <form>
         <label for="nombre">Nombre:</label>
-        <input type="text">
+        <input id="nombre" type="text">
 
         <label for="email">Email:</label>
-        <input type="email">
+        <input id="email" type="email">
 
         <label for="mensaje">Mensaje:</label>
-        <textarea></textarea>
+        <textarea id="mensaje"></textarea>
         <div class="botones">
         <button type="reset">Limpiar</button>
         <button type="submit">Enviar</button>
@@ -63,9 +63,11 @@
     <!-- Sección donde se debe mostrar los mensajes de error -->
     
     <div class="div-error">
-      <span class="error" 
-        >La Película ingresada ya se encuentra almacenada
-      </span>
+      <!-- MENSAJES DE ERRORES -->
+      <span id="nombreError" class="error" style="display: none;"></span>
+      <span id="emailError" class="error" style="display: none;"></span>
+      <span id="errorMensaje" class="error" style="display: none;"></span>
+      <span id="enviado" class="success" style="display: none;"></span>
     </div>
     </section>
     <p></p>
@@ -73,7 +75,7 @@
   <footer>
     <p>Desarrollado con ♥ - LC2</p>
   </footer>
-  <script src="js/common.js" defer></script>
+  <!-- <script src="js/common.js" defer></script> -->
   <script src="js/pages/help.js" defer></script>
 </body>
 
