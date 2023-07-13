@@ -9,10 +9,22 @@
     align-items: center;
     flex-direction: column;
     padding: 50px 20px;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+  }
+  .contenedorPeliculasFavoritas img {
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    border-radius: 30px;
+  }
+  
+  .contenedorPeliculasFavoritas > p {
+  height: 200px;
+  max-width: 390px;
 }
-.contenedorPeliculasFavoritas img {
-  justify-content: center;
-  align-items: center;
-  width: 45%;
-  border-radius: 30px;
+
+.contenedorPeliculasFavoritas > h3 {
+
+  padding-top: 15px;
+  margin-bottom: 35px;
 }
