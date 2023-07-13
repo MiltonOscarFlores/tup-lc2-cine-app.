@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  
 }
 :root {
   /* Declaro variables CSS con colores principales */
@@ -80,7 +81,7 @@ main {
   width: 100%;
 }
 main h2 {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  text-shadow:0 0 10px rgba(255, 0, 0, 0.35);;
 }
 h1 {
   text-align: center;
@@ -212,6 +213,10 @@ form {
 
 form > label {
   margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
 }
 
 .contenedorPeliculas {
@@ -238,6 +243,7 @@ form > label {
   padding-top: 15px;
   margin-bottom: 15px;
   height: 45px;
+  text-shadow:0 0 10px rgba(0, 0, 0, 1);
 }
 
 .contenedorPeliculas img {
@@ -335,7 +341,7 @@ form > label {
 
 div p {
   text-align: justify;
-  color: #acb1ac;
+  color: #288BA8;
 }
 
 .padreboton {
