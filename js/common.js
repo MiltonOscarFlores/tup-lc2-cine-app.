@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const paginaActual = document.querySelector("#paginaActual");
 
     // PELICULAS
-    const cargarPeliculas = async () => {
+    const cargarEstrenos = async () => {
       try {
         let respuesta = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=d499f83b1fc4e52d8070293d3520f049&Language=es-AR&page=${pagina}`);
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     };
 
-    cargarPeliculas();
+    cargarEstrenos();
 
 
 
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     btnSiguiente.addEventListener("click", () => {
       if (pagina < 1000) {
         pagina += 1;
-        cargarPeliculas();
+        cargarEstrenos();
         paginaActual.textContent = pagina;
       }
     });
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     btnAnterior.addEventListener("click", () => {
       if (pagina > 1) {
         pagina -= 1;
-        cargarPeliculas();
+        cargarEstrenos();
         paginaActual.textContent = pagina;
       }
     });
